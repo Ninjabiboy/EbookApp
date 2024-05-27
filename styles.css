@@ -9,12 +9,11 @@ th, td {
     width: 100%;
     border: 2px solid black;
     border-collapse: collapse; 
-    background-color: red;
     padding: 10px;
     border-spacing: 20px;
 }
-tr {
-    height: 200%;
+tr:nth-child(even),td:nth-child(even) {
+    background-color: lightblue;
 }
 
 h1, h2, h3 {
