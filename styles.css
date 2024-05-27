@@ -6,9 +6,13 @@ body {
 }
 
 th, td {
+    width: 100%;
     border: 2px solid black;
-    border-collapse: collapse;
+    border-collapse: collapse; 
     background-color: red;
+}
+tr {
+    height: 200%;
 }
 
 h1, h2, h3 {
