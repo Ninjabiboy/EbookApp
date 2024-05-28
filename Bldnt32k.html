@@ -75,5 +75,64 @@
     <div class="paragraph" style="background-color: pink; font-weight:bold; font-style:italic; font-size:xx-large;">
         <p>this is a test</p>
     </div>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" style="margin-left:47px"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" style="margin-left:50px"><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" style="margin-left:25px"></textarea><br>
+
+    <label for="checker">Gender:</label>
+    <input type="radio" id="male" name="checker" style="margin-left:50px" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="checker" style="margin-left: 50px" value="Female">
+    <label for="male">Female</label><br>
+
+    <label for="check">What do you prefer?</label><br>
+    <input type="checkbox" id="games" name="check" style="margin-left:40px" value="Games">
+    <label for="games">Games</label><br>
+    <input type="checkbox" id="sleep" name="check" style="margin-left:40px" value="Sleep">
+    <label for="sleep">Sleep</label><br>
+    <input type="checkbox" id="book" name="check" style="margin-left:40px" value="Book">
+    <label for="book">Read Book</label><br>
+
+    <button id="button" name="button" style="border-radius: 20%; border-color:red; width:150px; height:20px;">Click me!</button><br>
+    <input type="submit" value="Submit">
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modal-text"></p>
+        </div>
+      </div>
+    
+</form>
+<script>
+    var count = 0;
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    var modalText = document.getElementById("modal-text");
+
+    document.getElementById("button").addEventListener("click", function(event){
+        event.preventDefault();
+        count++;
+        modalText.innerText = "Button clicked " + count + " times";
+        modal.style.display = "block";
+    });
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
