@@ -99,3 +99,7 @@ body::before {
     background-image: linear-gradient(to bottom right, #51c4d3, #752f2f);
     z-index: -1;
 }
+
+ .paragraph{
+    background-color: red;
+ }
