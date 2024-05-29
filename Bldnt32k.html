@@ -74,7 +74,7 @@
     <div class="paragraph" style="background-color: pink; font-weight:bold; font-style:italic; font-size:xx-large;">
         <p>this is a test</p>
     </div>
-<form action="landingpage.html">
+<form action="landingpage.html" target="_blank">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" style="margin-left:47px"  value="James" readonly><br>
 
@@ -165,8 +165,14 @@
 
     <input type="submit" value="Submit" title="Submit Button"><br>
 
-
 </form>
+<canvas id="Mycanvas" width="500px" height="500px" style="background-color: white;"></canvas><br>
+
+<label for="MyMusic">Click Me</label>
+<audio id="MyMusic" controls>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 <script>
     var count = 0;
     var modal = document.getElementById("myModal");
