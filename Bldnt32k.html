@@ -7,7 +7,6 @@
     <link rel="Stylesheet" href="styles.css">
     <link rel="icon" type="image" href="bird.jpg">
 </head>
-<>
     <header>
         <nav>
             <ul>
@@ -75,12 +74,15 @@
     <div class="paragraph" style="background-color: pink; font-weight:bold; font-style:italic; font-size:xx-large;">
         <p>this is a test</p>
     </div>
-<form>
+<form action="landingpage.html">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" style="margin-left:47px"><br>
+    <input type="text" id="name" name="name" style="margin-left:47px"  value="James" readonly><br>
 
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" style="margin-left:50px"><br>
+
+    <label for="pin">Input Pin 4 Digit</label>
+    <input type="text" id="pin" name="pin" size="4" maxlength="4"><br>
 
     <label for="message">Message:</label>
     <textarea id="message" name="message" style="margin-left:25px"></textarea><br>
@@ -100,7 +102,6 @@
     <label for="book">Read Book</label><br>
 
     <button id="button" name="button" style="border-radius: 20%; border-color:red; width:150px; height:20px;">Click me!</button><br>
-    <input type="submit" value="Submit">
 
     <div id="myModal" class="modal">
         <!-- Modal content -->
@@ -108,8 +109,63 @@
           <span class="close">&times;</span>
           <p id="modal-text"></p>
         </div>
-      </div>
+    </div>
+
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="col" name="favcolor"><br>
+
+    <label for="date">Whats the date today?</label>
+    <input type="date" id="dat" name="date"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="ema" name="email" placeholder="Input Email Here" ><br>
+
+    <label for="image">Insert Image:</label>
+    <input type="image" id="img" name="image"><br>
+
+    <label for="file">Insert File:</label>
+    <input type="file" id="fle" name="file"><br>
     
+    <label for="month" style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;">Month:</label>
+    <input type="month" id="mth" name="month"><br>
+
+    <label for="number">Type Number:</label>
+    <input type="number" id="num" name="number" min="5" max="31" step="2" ><br>
+
+    <label for="range">Range:</label>
+    <input type="range" id="ran" name="range" style="background: red;"><br>
+
+    <label for="search">Search:</label>
+    <input type="search" id="sear" name="search" placeholder="Type anything" style="margin-left: 20px;"><br>
+
+    <label for="tel">telephone:</label>
+    <input type="tel" id="telephone" name="tel" placeholder="09999999999"  size="20" maxlength="11" pattern="[0]{1}[9]{1}[0-9]{9}" required><br>
+
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" style="margin-left: 37px;" ><br>
+    
+    <label for="browsers">Browsers:</label>
+    <input list="browsers" style="margin-left: 1px;">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> <br>
+
+  <label for="cars" style="font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;">Cars:</label>
+  <select name="cars" style="margin-left: 33px;">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br>
+
+
+    <input type="submit" value="Submit" title="Submit Button"><br>
+
+
 </form>
 <script>
     var count = 0;
